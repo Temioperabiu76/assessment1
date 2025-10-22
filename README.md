@@ -1,6 +1,6 @@
 # assessment1
 # CLOUDLAUNCH
-s3 BUCKET (task1)
+# TASK 1
  Created three buckets
        cloudlaaunch-bucket
        cloudlaunch-private-bucket
@@ -44,5 +44,33 @@ https://d295p8973yh0yn.cloudfront.net/
 	]
 }
 
+# TASK 2
+   #created
+    -VPC
+	-3Subnets(sb)
+	-Internet Gateway(IGW)
+	-Route Tables(rb)
+	-Private subnet route tables
+	-Security Group
+
+	#formated IAM user
+	
+   {
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Statement1",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeRouteTables",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeInternetGateways"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
   
    
